@@ -35,7 +35,7 @@
         <h2 class="projetos-titulo">Meus Projetos</h2>
         <div class="projetos-caixa">
             <div class="projetos-card">
-                <img src="img/site.webp"  class="projetos-imagem" alt="projeto 1">
+                <img src="img/site.webp" class="projetos-imagem" alt="projeto 1">
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Agência de Viagens</h3>
                     <p class="paragrafo-projetos">Site de viagens</p>
@@ -43,7 +43,7 @@
 
             </div>
             <div class="projetos-card">
-                <img src="img/carros.jpg" class="projetos-imagem"  alt="projeto 1">
+                <img src="img/carros.jpg" class="projetos-imagem" alt="projeto 1">
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Loja de Carros</h3>
                     <p class="paragrafo-projetos">Projeto de uma loja de carros</p>
@@ -51,7 +51,7 @@
 
             </div>
             <div class="projetos-card">
-                <img src="img/viagem.webp" class="projetos-imagem"  alt="projeto 1">
+                <img src="img/viagem.webp" class="projetos-imagem" alt="projeto 1">
                 <div class="caixa-textos-projeto">
                     <h3 class="info-projetos">Hospedagem</h3>
                     <p class="paragrafo-projetos">Hotel</p>
@@ -72,27 +72,18 @@
             <button type="submit" class="botao">Enviar WhatsApp</button>
         </form>
     </section>
-<script>
-    function enviar(event){
-        event.preventDefault();
-        const nome = document.getElementById("Nome").value;
-        const mensagem = document.getElementById("Mensagem").value;
-        const telefone = '5583981672361';
-        const texto = `Olá, meu nome é ${nome} e gostaria de entrar em contato com você. ${mensagem}`;
-        const msgFormatada = encodeURIComponent(texto);
-        const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-        window.open(url, '_blank');
-    }
-</script>
-    const nome= document.getElementById("Nome");
-    const mensagem = document.getElementById("Mensagem")
-    const telefone = '5583981672361';
-    const texto = `Olá, meu nome é ${nome.value} e gostaria de entrar em contato com você. ${mensagem.value}`;
-    const msgFormatada = encodeURIComponent(texto);
-    const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
-    window.open(url, '_blank');
-    
-</script>
+    <script>
+        function enviar(event) {
+            event.preventDefault();
+            const nome = document.getElementById("Nome").value;
+            const mensagem = document.getElementById("Mensagem").value;
+            const telefone = '5583981672361';
+            const texto = `Olá, meu nome é ${nome} e gostaria de entrar em contato com você. ${mensagem}`;
+            const msgFormatada = encodeURIComponent(texto);
+            const url = `https://wa.me/${telefone}?text=${msgFormatada}`;
+            window.open(url, '_blank');
+        }
+    </script>
 </body>
 
 </html>
